@@ -94,10 +94,35 @@
 
     <!-- ? CREATE END -->
 
-    <!-- ! READ START -->
+    <!-- ! Filter start -->
+    <form>
+      <input type="radio" value="Cappucino" name="coffee" />
+      <label for="late">Каппучино</label>
+      <br />
+      <input type="radio" value="Americano" name="coffee" />
+      <label for="latte">Американо</label>
+      <br />
+      <input type="radio" value="Latte" name="coffee" />
+      <label for="latte">Латте</label>
+      <br />
+      <input type="radio" value="all" name="coffee" />
+      <label for="latte">Все продукты</label>
+      <br />
+    </form>
 
+    <!-- ! Filter end -->
+
+    <!-- ! READ START -->
     <section id="section__read"></section>
     <!-- ? READ END -->
+
+    <!-- !PAGINATION START -->
+    <div class="paginate">
+      <button id="prev-btn">Prev</button>
+      <button id="next-btn">Next</button>
+    </div>
+    <!-- ? PAGINATION END -->
+
     <!-- ! CARUSEL START -->
     <div
       id="carouselExampleIndicators"
@@ -165,6 +190,35 @@
       </button>
     </div>
     <!-- ! CARUSEL END -->
+    <!-- ! EDIT START -->
+    <div class="main-modal">
+      <div class="main-modal__window">
+        <button class="window__edit_close">X</button>
+        <input
+          type="text"
+          class="window__edit_details"
+          placeholder="Описание"
+        />
+        <input type="number" class="window__edit_price" placeholder="Цена" />
+        <input
+          type="text"
+          class="window__edit_quantity"
+          placeholder="Наименование"
+        />
+        <input
+          type="text"
+          class="window__edit_category"
+          placeholder="Категория"
+        />
+        <input type="number" class="window__edit_sales" placeholder="Скидки" />
+        <input
+          type="url"
+          class="window__edit_url"
+          placeholder="URL изображение"
+        />
+        <button class="window__edit_btn-save">Edit</button>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
